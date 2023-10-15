@@ -1,0 +1,236 @@
+{
+  "stats": {
+    "suites": 5,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-15T08:44:28.090Z",
+    "end": "2023-10-15T08:44:28.743Z",
+    "duration": 653,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e985b199-80bd-4996-9812-ed1284a167f3",
+      "title": "",
+      "fullFile": "/Users/arinaal-haque/Tugas5/Api-automation/kasir-aja/suites/CRUD.js",
+      "file": "/kasir-aja/suites/CRUD.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7cbb9a79-e2c8-4427-bb0a-266222d56650",
+          "title": "CRUD Restfull Category",
+          "fullFile": "/Users/arinaal-haque/Tugas5/Api-automation/kasir-aja/suites/CRUD.js",
+          "file": "/kasir-aja/suites/CRUD.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "1279ce5f-b7e0-41dc-86db-f109d500f59c",
+              "title": "Success Add Category",
+              "fullFile": "/Users/arinaal-haque/Tugas5/Api-automation/kasir-aja/suites/CRUD.js",
+              "file": "/kasir-aja/suites/CRUD.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should return a 200 status code",
+                  "fullTitle": "CRUD Restfull Category Success Add Category should return a 200 status code",
+                  "timedOut": false,
+                  "duration": 412,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "const response = await addCategory(token);\n//  console.log(response.body);\n    categoryID = response.body.data.categoryId\n    expect(categoryID).not.equal(null)\n    expect(response.status).equal(201);",
+                  "err": {},
+                  "uuid": "c7487328-cc5b-4adf-bd80-967c0739d697",
+                  "parentUUID": "1279ce5f-b7e0-41dc-86db-f109d500f59c",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "c7487328-cc5b-4adf-bd80-967c0739d697"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 412,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "7c148b97-ac03-4a79-bc46-b09f7d9ef601",
+              "title": "Success Get Category",
+              "fullFile": "/Users/arinaal-haque/Tugas5/Api-automation/kasir-aja/suites/CRUD.js",
+              "file": "/kasir-aja/suites/CRUD.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should return a 200 status code",
+                  "fullTitle": "CRUD Restfull Category Success Get Category should return a 200 status code",
+                  "timedOut": false,
+                  "duration": 77,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// console.log(categoryID);\nconst response = await getCategory(token,categoryID);\n\nexpect(response.status).to.equal(200);\nexpect(response.body.status).to.equal('success');\nexpect(response.body.data.category.name).to.equal('makanan ringan');\nexpect(response.body.data.category.description).to.equal('makanan ringan dari indofood');",
+                  "err": {},
+                  "uuid": "3ad67ac9-bb21-4559-b5d2-f567cca51d8c",
+                  "parentUUID": "7c148b97-ac03-4a79-bc46-b09f7d9ef601",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "3ad67ac9-bb21-4559-b5d2-f567cca51d8c"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 77,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "d9b4ec04-9ed5-4aed-bc51-9feeeb3a66d2",
+              "title": "Success Put Category",
+              "fullFile": "/Users/arinaal-haque/Tugas5/Api-automation/kasir-aja/suites/CRUD.js",
+              "file": "/kasir-aja/suites/CRUD.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should return a 200 status code",
+                  "fullTitle": "CRUD Restfull Category Success Put Category should return a 200 status code",
+                  "timedOut": false,
+                  "duration": 77,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// console.log(categoryID);\nconst response = await putCategory(token,categoryID);\n// console.log(response.body);\nexpect(response.status).to.equal(200);\nexpect(response.body.status).to.equal('success');\nexpect(response.body.data.name).to.equal('update-minuman');",
+                  "err": {},
+                  "uuid": "4d484eb0-9896-4232-bcbd-9b88f739f1e6",
+                  "parentUUID": "d9b4ec04-9ed5-4aed-bc51-9feeeb3a66d2",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "4d484eb0-9896-4232-bcbd-9b88f739f1e6"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 77,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "16acdab3-1f24-477f-b2cc-6aeaba41f0f8",
+              "title": "Success Delete Category",
+              "fullFile": "/Users/arinaal-haque/Tugas5/Api-automation/kasir-aja/suites/CRUD.js",
+              "file": "/kasir-aja/suites/CRUD.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should return a 200 status code",
+                  "fullTitle": "CRUD Restfull Category Success Delete Category should return a 200 status code",
+                  "timedOut": false,
+                  "duration": 75,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// console.log(categoryID);\nconst response = await deleteCategory(token,categoryID);\nconsole.log(response.body);\nexpect(response.status).to.equal(200);\nexpect(response.body.status).to.equal('success');\nexpect(response.body.data).to.eql({});",
+                  "err": {},
+                  "uuid": "f3c4d19f-6c2c-47f4-9c26-5d72a0a0bdf3",
+                  "parentUUID": "16acdab3-1f24-477f-b2cc-6aeaba41f0f8",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "f3c4d19f-6c2c-47f4-9c26-5d72a0a0bdf3"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 75,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

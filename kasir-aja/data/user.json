@@ -1,0 +1,17 @@
+{
+    "status": "success",
+    "message": "Authentication berhasil ditambahkan",
+    "data": {
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjAxNjgwYmFhLWY2NDYtNDA0MC1iMTEwLTVlNzBhNmZlYzM5NCIsImNvbXBhbnlJZCI6IjY2ZDllMTQ3LTk3N2ItNDEzNS04YWVjLWE4NjI0MjkyNWExNSIsImlhdCI6MTY5NzM1NTkxMn0.3Qs3g_uWL74z2UJXFjhsW0lMZhWXF8FkrqbMJZOwXjQ",
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjAxNjgwYmFhLWY2NDYtNDA0MC1iMTEwLTVlNzBhNmZlYzM5NCIsImNvbXBhbnlJZCI6IjY2ZDllMTQ3LTk3N2ItNDEzNS04YWVjLWE4NjI0MjkyNWExNSIsImlhdCI6MTY5NzM1NTkxMn0.FlMtFiHyBkJOI4mBFHPZt06mDkoKcTw8LkYgmzkKxmk",
+        "user": {
+            "id": "01680baa-f646-4040-b110-5e70a6fec394",
+            "name": "nama Toko",
+            "role": "admin",
+            "email": "sample@ex.com",
+            "officeId": "91707a88-cb48-4f09-b3f3-bedd4cc8d2ae",
+            "companyId": "66d9e147-977b-4135-8aec-a86242925a15",
+            "company_name": "nama Toko"
+        }
+    }
+}
